@@ -1,0 +1,28 @@
+body {
+  background-color: beige;
+}
+
+h1 {
+  color: cornflowerblue;
+  transition: color 0.5s ease-in-out;
+}
+
+.active {
+  color: tomato;
+}
+
+.hidden {
+  display: none;
+}
+/* 
+.background-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
