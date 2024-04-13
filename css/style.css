@@ -14,7 +14,13 @@ h1 {
 .hidden {
   display: none;
 }
-/* 
+
+.login-layout {
+  position: absolute;
+  inset: 0;
+  color: rgba(255, 255, 255, 0.85);
+}
+
 .background-item {
   position: absolute;
   top: 0;
@@ -25,4 +31,24 @@ h1 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-} */
+}
+
+.top-right {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px;
+}
+
+.current-weather {
+  display: flex;
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+.current-city {
+  opacity: 0.85;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
