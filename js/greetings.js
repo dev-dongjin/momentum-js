@@ -15,6 +15,10 @@ function onLoginSubmit(event) {
 
 function paintGreetings(userName) {
   greeting.innerText = `Hello ${userName}`;
+  const loginElementList = document.getElementsByClassName('login-shown');
+  Array.from(loginElementList).forEach((element) =>
+    element.classList.remove(HIDDEN_CLASSNAME)
+  );
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
