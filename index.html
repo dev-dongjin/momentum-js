@@ -16,6 +16,7 @@
       <div class="loggin-top">
         <div class="top-right">
           <div id="weather" class="login-shown hidden">
+            <span class="current-temp"></span>
             <span class="current-weather"></span>
             <span class="current-city"></span>
           </div>
@@ -44,13 +45,16 @@
             <h1 class="hidden" id="greeting"></h1>
           </div>
           <div id="todoBox" class="login-shown hidden">
-            <form id="todo-form">
-              <input
-                type="text"
-                placeholder="Write a To Do and Press Enter"
-                required
-              />
-            </form>
+            <div>
+              <span id="todo-message" class="login-shown hidden">
+                What are your goals for today?
+              </span>
+            </div>
+            <div>
+              <form id="todo-form">
+                <input id="todo-input" type="text" required />
+              </form>
+            </div>
           </div>
         </div>
       </div>

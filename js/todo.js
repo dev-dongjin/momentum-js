@@ -32,7 +32,7 @@ function addTodoList(newTodo) {
   const li = document.createElement('li');
   const span = document.createElement('span');
   const button = document.createElement('button');
-  button.innerText = 'X';
+  button.innerText = '❌';
   button.addEventListener('click', deleteTodo);
   li.id = newTodo.id;
   li.appendChild(span);
