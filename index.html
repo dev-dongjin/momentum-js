@@ -37,13 +37,13 @@
         </div>
         <div id="loggedInBox" class="login-shown hidden">
           <div class="above"></div>
-          <div id="clockBox">
+          <div id="clockBox" class="login-shown hidden">
             <h2 id="clock">00:00</h2>
           </div>
-          <div id="greetingBox">
+          <div id="greetingBox" class="login-shown hidden">
             <h1 class="hidden" id="greeting"></h1>
           </div>
-          <div id="todoBox">
+          <div id="todoBox" class="login-shown hidden">
             <form id="todo-form">
               <input
                 type="text"
@@ -52,11 +52,13 @@
               />
             </form>
           </div>
-          <ul id="todo-list"></ul>
-          <div id="quote">
-            <span></span>
-            <span></span>
-          </div>
+        </div>
+      </div>
+      <div class="login-bottom">
+        <ul id="todo-list"></ul>
+        <div id="quote" class="login-shown hidden">
+          <span class="quote-item"></span>
+          <span class="quote-item"></span>
         </div>
       </div>
     </div>
