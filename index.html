@@ -13,34 +13,45 @@
       </div>
     </div>
     <div class="login-layout">
-      <div class="loggin-top login-shown hidden">
+      <div class="loggin-top">
         <div class="top-right">
-          <div id="weather">
+          <div id="weather" class="login-shown hidden">
             <span class="current-weather"></span>
             <span class="current-city"></span>
           </div>
         </div>
       </div>
       <div class="login-middle">
-        <form class="hidden" id="login-form">
-          <input
-            required
-            maxlength="15"
-            type="text"
-            placeholder="What is your name?"
-          />
-          <input type="submit" value="Log In" />
-        </form>
-        <div class="login-shown hidden">
-          <h2 id="clock">00:00</h2>
-          <h1 class="hidden" id="greeting"></h1>
-          <form id="todo-form">
-            <input
-              type="text"
-              placeholder="Write a To Do and Press Enter"
-              required
-            />
-          </form>
+        <div id="loginBox" class="hidden">
+          <div class="above"></div>
+          <div>
+            <span id="login-message" class="question hidden">
+              Hello! What's your name?
+            </span>
+          </div>
+          <div>
+            <form class="hidden" id="login-form">
+              <input id="login-input" required maxlength="15" type="text" />
+            </form>
+          </div>
+        </div>
+        <div id="loggedInBox" class="login-shown hidden">
+          <div class="above"></div>
+          <div id="clockBox">
+            <h2 id="clock">00:00</h2>
+          </div>
+          <div id="greetingBox">
+            <h1 class="hidden" id="greeting"></h1>
+          </div>
+          <div id="todoBox">
+            <form id="todo-form">
+              <input
+                type="text"
+                placeholder="Write a To Do and Press Enter"
+                required
+              />
+            </form>
+          </div>
           <ul id="todo-list"></ul>
           <div id="quote">
             <span></span>

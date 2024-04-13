@@ -52,3 +52,49 @@ h1 {
   flex-direction: column;
   align-items: center;
 }
+
+.question {
+  font-size: 56px;
+}
+
+#greeting {
+  font-size: 3.375rem;
+  margin: 0px;
+  margin-bottom: 40px;
+}
+
+#clock {
+  font-size: 550%;
+  margin: 40px;
+  margin-bottom: 0px;
+}
+
+#loginBox,
+#loggedInBox {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  padding-bottom: 10px;
+}
+
+#loginBox.hidden,
+#loggedInBox.hidden {
+  height: 0px;
+}
+
+.above {
+  display: flex;
+  flex: 1 1 100%;
+}
+
+#login-input {
+  border: none;
+  text-align: center;
+  background: 0 0;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  font-size: 30px;
+}
