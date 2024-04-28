@@ -1,5 +1,3 @@
-const API_KEY = config.WEATHER_API_KEY;
-
 async function onGeoSuccess(geoLocationPosition) {
   const { latitude, longitude } = geoLocationPosition.coords;
   const url = `https://xm30zrask1.execute-api.us-east-1.amazonaws.com/prod/weather?latitude=${latitude}&longitude=${longitude}`;
