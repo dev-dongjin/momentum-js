@@ -2,12 +2,11 @@ const API_KEY = config.WEATHER_API_KEY;
 
 async function onGeoSuccess(geoLocationPosition) {
   const { latitude, longitude } = geoLocationPosition.coords;
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&limit=5&appid=${API_KEY}&units=metric`;
+  const url = `https://xm30zrask1.execute-api.us-east-1.amazonaws.com/prod/weather?latitude=${latitude}&longitude=${longitude}`;
   const response = await fetch(url);
   const data = await response.json();
-  const { name, main, weather } = data;
-  const { temp } = main;
-  const { description } = weather[0];
+  const { message } = data;
+  const { name, temp, weatherDescription } = message;
 
   const tempElement = document.querySelector('#weather span.current-temp');
   const weatherElement = document.querySelector(
@@ -16,7 +15,7 @@ async function onGeoSuccess(geoLocationPosition) {
   const cityElement = document.querySelector('#weather span.current-city');
 
   tempElement.innerText = `${temp}°C`;
-  weatherElement.innerText = description;
+  weatherElement.innerText = weatherDescription;
   cityElement.innerText = name;
 }
 function onGeoError() {
