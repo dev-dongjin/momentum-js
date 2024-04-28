@@ -14,3 +14,10 @@ This project is a clone of the Momentum app ([Momentum Dash](https://momentumdas
 You can see this project live [here](https://dev-dongjin.github.io/momentum-js/).
 
 ## Screenshot
+<img width="1512" alt="스크린샷 2024-04-27 오후 6 40 11" src="https://github.com/dev-dongjin/momentum-js/assets/39150608/d54d5511-c719-4828-9fbc-9f7fd5082d7c">
+
+<img width="1512" alt="스크린샷 2024-04-27 오후 6 43 29" src="https://github.com/dev-dongjin/momentum-js/assets/39150608/ad05cd73-bf49-4f7f-a082-41785ed2caeb">
+
+
+
+
